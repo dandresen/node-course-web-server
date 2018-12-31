@@ -24,9 +24,9 @@ app.use((req, res, next) => {
 });
 
 // use this to stop all of the app.use below
-// app.use((req, res, next) => {
-//     res.render('maintenance.hbs')
-// });
+app.use((req, res, next) => {
+    res.render('maintenance.hbs')
+});
 
 app.use(express.static(__dirname + '/public'));
 
